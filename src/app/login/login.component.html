@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome</h1>
+
+    <form class="form" name="formLogin" >
+      <input type="text"  name="link" [(ngModel)]="link" >
+      <input type="text" placeholder="Username" name="username" [(ngModel)]="username" >
+      <!--<input type="text" placeholder="Username" [(ngModel)]="username" (input)="listenUsername($event)">-->
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="password">
+      <button type="submit" (click)="loginClick()" id="login-button">Login</button>
+      <!--<div style="width: 200px; height: 50px"><app-pac-man></app-pac-man></div>-->
+
+
+        <!--<div style="margin-top: 70px">-->
+          <!--<button type="button" (click)="signUpClick()" class="signUp-button">Sign Up</button>-->
+        <!--</div>-->
+    </form>
+
+  </div>
+
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

@@ -1,0 +1,86 @@
+
+  // in tsconfig.json file add this
+"typeRoots": [
+     "node_modules/@types",
+     "node_modules/web-ext-types"
+   ],
+
+-----------------------------------------------------------------------------------------------------------------------
+   // then add the mainfest.json in angular-cli.json file inside app[]
+"app":[
+  { ....
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "img",
+        "manifest.json"
+      ]
+  }
+
+-----------------------------------------------------------------------------------------------------------------------
+    // place a mainfest.json file inside ./assets/ and also ./src/
+
+-----------------------------------------------------------------------------------------------------------------------
+    // mainfest full content are
+
+{
+
+  "manifest_version": 2,
+
+  "name": "DHIS2 Notifier",
+  "version": "0.0.0",
+  "description": "A DHIS2 web extension in Development process",
+  "homepage_url": "https://dhis.hisptz.org/dhis",
+
+  "options_ui": {
+    "page": "/index.html"
+  },
+
+  "icons": {
+    "16": "/img/Icon-36.png",
+    "24": "/img/Icon-36.png",
+    "32": "/img/Icon-36.png",
+    "48": "/img/Icon-48.png",
+    "64": "/img/Icon-72.png",
+    "96": "/img/Icon-96.png",
+    "128": "/img/Icon-144.png",
+    "256": "/img/Icon-192.png"
+  },
+
+  "background": {
+    "page": "/index.html"
+  },
+
+  "browser_action": {
+     "default_title": "DHIS2 Notifier",
+     "default_icon": {
+       "16": "/img/Icon-36.png",
+       "24": "/img/Icon-36.png",
+       "32": "/img/Icon-36.png",
+       "48": "/img/Icon-48.png",
+       "64": "/img/Icon-72.png",
+       "96": "/img/Icon-96.png",
+       "128": "/img/Icon-144.png",
+       "256": "/img/Icon-192.png"
+     },
+     "default_popup": "/index.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+P"
+      },
+      "description": "Save page to Pinboard"
+    }
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://*/*"
+  ]
+
+}
+
+-----------------------------------------------------------------------------------------------------------------------

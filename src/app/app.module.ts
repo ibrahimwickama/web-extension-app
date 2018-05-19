@@ -6,16 +6,18 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { EventPageComponent } from './event-page/event-page.component';
 import { PopupComponent } from './popup/popup.component';
 import {RoutingModule} from "./app.routing";
+import {LoginComponent} from "./login/login.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     EventPageComponent,
-    PopupComponent
+    PopupComponent,LoginComponent
   ],
   imports: [
-    BrowserModule,RoutingModule,
+    BrowserModule,RoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
