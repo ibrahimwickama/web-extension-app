@@ -46,13 +46,14 @@
       "suggested_key": {
         "default": "Alt+P"
       },
-      "description": "Save page to Pinboard"
+      "description": "Receive notifications"
     }
   },
 
   "permissions": [
     "storage",
     "tabs",
+    "notifications",
     "*://*/*"
   ]
 

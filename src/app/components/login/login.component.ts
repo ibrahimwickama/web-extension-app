@@ -1,6 +1,8 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 // import {HpptProviderService} from "../../services/hppt-provider.service";
 
+declare var notifyMe:any;
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -39,6 +41,7 @@ export class LoginComponent implements OnInit {
 
 
   loginClick(){
+    new notifyMe();
     document.location.href = '#/home';
   }
 

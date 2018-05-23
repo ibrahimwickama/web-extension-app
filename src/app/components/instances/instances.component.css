@@ -1,0 +1,21 @@
+.btn-circle {
+  width: 50px;
+  /*height: 60px;*/
+  text-align: center;
+  padding: 6px 0;
+  font-size: 25px;
+  line-height: 1.42;
+  border-radius: 30px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+  overflow: visible;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.card:hover{
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  transition: 0.7s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+}

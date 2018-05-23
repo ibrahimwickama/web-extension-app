@@ -1,8 +1,8 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
-import {PopupComponent} from "./popup/popup.component";
-import {HomepageComponent} from "./homepage/homepage.component";
-import {LoginComponent} from "./login/login.component";
+import {PopupComponent} from "./components/popup/popup.component";
+import {HomepageComponent} from "./components/homepage/homepage.component";
+import {LoginComponent} from "./components/login/login.component";
 
 export const routes: Routes = [
   {

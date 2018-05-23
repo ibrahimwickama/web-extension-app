@@ -1,0 +1,26 @@
+<section class="container py-4" style="padding: 0px !important;">
+  <div class="row">
+    <div class="col-md-12" style="padding: 0px;" >
+      <!--<h2>Tabs</h2>-->
+      <ul id="tabsJustified" class="nav nav-tabs sticky-top" style="background-color: #3082c1;justify-content: center">
+        <li class="nav-item"><a href="" data-target="#messages" data-toggle="tab" class="nav-link small text-uppercase active">
+          <span class="float-right badge badge-pill badge-danger" style="margin-left: 5px;">8</span> Messages</a> </li>
+        <li class="nav-item"><a href="" data-target="#notifications" data-toggle="tab" class="nav-link small text-uppercase ">
+          <span class="float-right badge badge-pill badge-danger" style="margin-left: 5px;">2</span>Notifications</a></li>
+        <li class="nav-item"><a href="" data-target="#instance" data-toggle="tab" class="nav-link small text-uppercase ">Instance</a></li>
+      </ul>
+      <br>
+      <div id="tabsJustifiedContent" class="tab-content" style="padding-left: 10px;padding-right: 10px; " >
+        <div id="instance" class="tab-pane fade" >
+          <app-instances></app-instances>
+        </div>
+        <div id="notifications" class="tab-pane fade  ">
+          <app-notifications></app-notifications>
+        </div>
+        <div id="messages" class="tab-pane fade active show">
+          <app-messages></app-messages>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
